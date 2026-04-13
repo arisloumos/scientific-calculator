@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="calculator">
+        <div class="display-container">
+            <div id="history"></div>
+            <input id="display" readonly value="0">
+        </div>
+        
+        <div id="keys">
+            <!-- Row 1: Scientific -->
+            <button class="btn function" data-value="sin">sin</button>
+            <button class="btn function" data-value="cos">cos</button>
+            <button class="btn function" data-value="tan">tan</button>
+            <button class="btn function" data-value="sqrt">√</button>
+
+            <!-- Row 2: Scientific -->
+            <button class="btn function" data-value="log">log</button>
+            <button class="btn function" data-value="pi">π</button>
+            <button class="btn function" data-value="e">e</button>
+            <button class="btn function" data-value="^">^</button>
+
+            <!-- Row 3: Control & Parentheses -->
+            <button class="btn function" data-value="(">(</button>
+            <button class="btn function" data-value=")">)</button>
+            <button class="btn equals" data-value="clear">AC</button>
+            <button class="btn equals" data-value="delete">DEL</button>
+
+            <!-- Row 4: Numpad & Operators -->
+            <button class="btn" data-value="7">7</button>
+            <button class="btn" data-value="8">8</button>
+            <button class="btn" data-value="9">9</button>
+            <button class="btn operator" data-value="/">÷</button>
+
+            <!-- Row 5: Numpad & Operators -->
+            <button class="btn" data-value="4">4</button>
+            <button class="btn" data-value="5">5</button>
+            <button class="btn" data-value="6">6</button>
+            <button class="btn operator" data-value="*">×</button>
+
+            <!-- Row 6: Numpad & Operators -->
+            <button class="btn" data-value="1">1</button>
+            <button class="btn" data-value="2">2</button>
+            <button class="btn" data-value="3">3</button>
+            <button class="btn operator" data-value="-">-</button>
+
+            <!-- Row 7: Numpad & Operators -->
+            <button class="btn" data-value="0">0</button>
+            <button class="btn" data-value=".">.</button>
+            <button class="btn equals" data-value="equals">=</button>
+            <button class="btn operator" data-value="+">+</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
